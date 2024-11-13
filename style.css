@@ -1,0 +1,1886 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family:'Quicksand';
+   background:linear-gradient(#800909,#661111,#4d1a1a,#332222,#1a2b2b);
+}
+.btn-wsp{
+    position: fixed;
+    width: 70px;
+    height: 65px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #366325;
+    color:white;
+    border-radius: 50px;
+    text-align:center;
+    z-index: 999;
+
+}
+.btn-wsp:hover{
+   color: #2e2926; 
+}
+/* Header */
+
+.nav {
+    padding: 30px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 25px;
+    cursor: pointer;
+    font-size: 0px;
+    background-color: #2e2926;
+    border-radius: 20px;
+    margin: 40px;
+    width: auto;
+}
+.navbar-toggler-icon{
+    color: whitesmoke;
+}
+.nav-link{
+    font-size: 30px;
+    margin: 20px;
+}
+
+.nav-link:hover {
+    color: #847974;
+    text-decoration: overline;
+    transition: all 0.5s;
+}
+
+.redes .red {
+    margin: 30px;
+}
+
+svg {
+    margin: 30px;
+    color: #e8d7a9;
+    width: 45px;
+    height: auto;
+}
+
+svg:hover {
+    color: aliceblue;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+/* Home */
+.home {
+    background-image: url(./multimedia/degustacion\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home__img {
+    max-width: 30%; /* Ajusta a un tamaño máximo específico */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 20px ; /* Centra la imagen */
+}
+
+.eslogan .slogan {
+    margin: auto;
+    width: 50%;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgba(245, 245, 245, 0.849);
+}
+
+/*carrusel*/
+.slider_box{
+    margin: 50px auto 0;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    overflow:hidden;
+    position: center;
+}
+.slider_box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slider_box li {
+    width: 100%; /* Cada imagen ocupará el 100% del contenedor */
+    list-style: none;
+    position: relative;
+}
+.slider_box img{
+    width: 100%;
+    max-height:550px ;
+    object-fit: cover;
+}
+
+@keyframes slide{
+    0%{margin-left:0 ; }
+    20%{margin-left:0; }
+
+    25%{margin-left:-100% ; }
+    45%{margin-left:-100% ; }
+
+    50%{margin-left:-200% ; }
+    70%{margin-left: -200%; }
+
+    75%{margin-left:-300% ; }
+    100%{margin-left: -300%; }
+}
+@media (min-width: 1200px){
+    .slider_box {
+        width: 90%;
+    }
+    .slider_box img {
+        height: 550px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 1200px) {
+    .slider_box {
+        width: 90%;
+    }
+    .slider_box img {
+        height: 400px;
+    }
+}
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 992px) {
+    .slider_box {
+        width: 95%;
+    }
+    .slider_box img {
+        max-height: 350px;
+    }
+}
+
+/* Dispositivos pequeños (teléfonos en horizontal) */
+@media (max-width: 768px) {
+    .slider_box {
+        width: 100%;
+    }
+    .slider_box img {
+        max-height: 300px;
+    }
+}
+
+/* Teléfonos en orientación vertical */
+@media (max-width: 576px) {
+    .slider_box {
+        width: 90%;
+        margin: 30px auto 0;
+        max-height: 80%;
+    }
+    .slider_box img {
+        height: 215px;
+    }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 400px) {
+    .slider_box img {
+        max-height: 211px;
+    }
+}
+
+
+/* Paquetes */
+.paquetes__title {
+    color: rgb(190, 190, 190);
+    display: flex;
+    justify-content: left;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 90px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    min-height: 90vh;
+}
+
+.card {
+    max-height:90%;
+    width:60%;
+    background: linear-gradient(black, #614d3a);
+    margin: auto;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 30px 3px 40px black;
+}
+
+.img__card {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    padding: 20px;
+}
+.titulo__card{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0%;
+}
+.descrip__viaje {
+    color: aliceblue;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.button__card {
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #a68e79;
+    font-size: 30px;
+}
+
+.button__card a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.button__card:hover {
+    background-color: #8f7864;
+    color: blanchedalmond;
+    transition: all 0.5s;
+}
+/* CSS Animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.fade-in-up {
+    opacity: 0; /* Hide elements initially */
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
+}
+  
+.card.hidden { /* Initial state, hidden */
+    opacity: 0;
+}
+  
+
+.paquetes__title{
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px;
+    color: #a68e79;
+
+}
+/* Vino */
+.wine {
+    margin: auto;
+    min-height: 90vh;
+}
+
+.wine h2 {
+    display: flex;
+    color: gainsboro;
+    font-size: 40px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+}
+
+.wine2 {
+  display: flex;
+  align-items: center;
+    padding: 40px;
+}
+
+.wine2 p {
+    color: #8f7864;
+    font-size: 60px;
+    font-weight: 700;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 30px 30px 30px black;
+    height: 550px;
+    padding: 40px;
+}
+/* CSS para animación de entrada desde la izquierda */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .wine2 li {
+    opacity: 0; /* Ocultar elementos inicialmente */
+    transform: translateX(-50px); /* Iniciar desplazado hacia la izquierda */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
+  }
+  
+  .wine2 li.visible {
+    animation: slideInLeft 0.8s ease forwards; /* Aplicar la animación cuando se haga visible */
+  }
+  
+.section__comentarios{
+    background-color: #4d1a1a;
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 10px 20px 15px black;
+}
+.contenedor{
+    width: 80%;
+    height: 450px;
+    overflow: hidden;
+    margin: auto;
+
+}
+.titulo__comentarios{
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+.slider-contenedor{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.slider-test{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    img{
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    p{
+        color: whitesmoke;
+        font-weight: 700;
+    }
+    h3{
+        color: whitesmoke;
+        font-weight: 700;
+    }
+    .button__comentarios{
+        background-color: #847974;
+        padding: 12px;
+        border-radius: 20px;
+        font-size: 15px;
+        a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    }
+    .button__comentarios:hover{
+        transition: all .5s;
+        background-color: #332222;
+        font-size:20px ;
+        padding:15px;
+    }
+}
+@media (max-width: 1024px) {
+    .section__comentarios, .contenedor {
+        width: 85%;
+    }
+
+    .contenedor {
+        height: 350px;
+    }
+
+    .titulo__comentarios {
+        font-size: 18px;
+    }
+
+    .slider-test img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Tablets en modo vertical (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .section__comentarios, .contenedor {
+        width: 90%;
+    }
+
+    .contenedor {
+        height: 300px;
+    }
+
+    .titulo__comentarios {
+        font-size: 16px;
+    }
+
+    .slider-test img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .slider-test p, .slider-test h3 {
+        font-size: 16px;
+    }
+}
+
+/* Smartphones grandes (ancho máximo de 600px) */
+@media (max-width: 600px) {
+    .section__comentarios, .contenedor {
+        width: 95%;
+    }
+    .titulo__card{
+        font-size: 15px;
+        margin: 5px auto 0;
+    }
+    .contenedor {
+        height: 280px;
+    }
+
+    .titulo__comentarios {
+        font-size: 15px;
+    }
+
+    .slider-test img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .slider-test p, .slider-test h3 {
+        font-size: 14px;
+    }
+}
+
+/* Smartphones medianos (ancho máximo de 480px) */
+@media (max-width: 480px) {
+    .section__comentarios, .contenedor {
+        width: 80%;
+    }
+
+    .contenedor {
+        height: 400px;
+    }
+
+    .titulo__comentarios {
+        font-size: 14px;
+    }
+
+    .slider-test img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .slider-test p, .slider-test h3 {
+        font-size: 13px;
+    }
+}
+
+/* Smartphones pequeños (ancho máximo de 360px) */
+@media (max-width: 360px) {
+    .section__comentarios, .contenedor {
+        width: 100%;
+    }
+
+    .contenedor {
+        height: 200px;
+    }
+
+    .titulo__comentarios {
+        font-size: 12px;
+    }
+
+    .slider-test img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .slider-test p, .slider-test h3 {
+        font-size: 12px;
+    }
+}
+.comentar{
+    min-height: 60vh;
+    color: whitesmoke;
+    font-weight: 700;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    button{
+        margin: 30px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 400px;
+        font-size: 15px;
+        background-color: #847974;
+        box-shadow:30px 30px 30px black;
+        a{
+            text-decoration: none;
+            color: #1a2b2b;
+        }
+    }
+    button:hover{
+        background-color:#f2f2f2;
+        transition: all .5s;
+        font-size: 20px;
+    }
+}
+.volver{
+    padding: 20px;
+    background-color: #333646;
+    border-radius: 20px;
+    border: solid 2px grey;
+    margin:20px;
+    a{
+        color:whitesmoke;
+        text-decoration: none;
+        font-size: 15px;
+    }
+}
+.volver:hover{
+    padding: 25px;
+    transition: all .5s;
+    background-color: #847974;
+    font-size: 20px;
+    color: #574e49;
+}
+@media (max-width: 768px) {
+    .comentar {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            width: 300px;
+            font-size: 12px;
+            padding: 15px;
+        }
+        button:hover{
+            background-color:#f2f2f2;
+            transition: all .5s;
+            font-size: 15px;
+            padding: 20px;
+        }
+    }
+    
+
+    .volver {
+        padding: 15px;
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Pantallas de smartphones grandes (ancho máximo de 600px) */
+@media (max-width: 600px) {
+    .comentar {
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            width: 250px;
+            font-size: 13px;
+            padding: 12px;
+        }
+    }
+
+    .volver {
+        padding: 12px;
+        a {
+            font-size: 13px;
+        }
+    }
+}
+
+/* Pantallas de smartphones pequeños (ancho máximo de 400px) */
+@media (max-width: 400px) {
+    .comentar {
+        h1 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        button {
+            width: 200px;
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    .volver {
+        padding: 10px;
+        a {
+            font-size: 12px;
+        }
+    }
+}
+
+/* Contacto */
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+/* Login */
+.login {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    justify-content: center;
+}
+.img__login{
+    width: 30%;
+    height: 30%;
+}
+.form-content {
+    padding: 20px;
+    border-radius: 25px;
+    min-height: 50vh;
+}
+
+
+.form-content h2 {
+    color: #847974;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-size: 17px;
+    color: #959aab;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 15px 14px;
+    background-color: #574e49;
+    border: 0;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+:focus {
+    outline: 1px solid #847974;
+}
+
+.btn {
+    background-color: #9a8f89;
+    width: 150px;
+    align-self: flex-start;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #333646;
+    color: whitesmoke;
+}
+
+/* Paquetes */
+
+
+
+.andino{
+    h2{
+        color: #9a8f89;
+        font-size: 30px;
+        text-align: center;
+    }
+    .itinerario {
+        padding: 40px;
+        justify-self: center;
+        color: #c4c4c4;
+        font-size: 30px;
+        font-weight: 600;
+        text-align:center ;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.andino__id {
+    .andino__img {
+        max-width: 950px;
+        box-shadow: 30px 30px 30px rgb(95, 95, 95);
+        margin: 40px;
+    }
+}
+
+
+
+
+
+
+/* Valle */
+
+.recorridos{
+    .recorrido{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        img{
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 30px 30px 30px black;
+            border: solid #847974;
+        }
+        p{
+            color: whitesmoke;
+            font-size: 30px;
+            font-weight: 700;
+            max-width: 700px;
+        }
+    }
+}
+
+/* Sección "¿Por qué elegir Wine City?" */
+.wine-city {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #574e49;
+    color: aliceblue;
+}
+
+.wine-city h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.wine-city__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wine-city__item {
+    max-width: 300px;
+    margin: 20px;
+    text-align: left;
+    background-color: #2e2926;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.wine-city__item:hover {
+    transform: translateY(-5px);
+}
+
+.wine-city__img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.wine-city__text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.sobre__nosotros{
+    background: linear-gradient(#574e49,black);
+    min-height: 100vh;
+    h1{
+        color: #c4c4c4;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+        padding: 80px;
+    }
+    .nosotros{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .img__nosotros{
+            max-width: 800px;
+        }
+    }
+    .descripcion__nosotros{
+        margin: 40px;
+        padding: 50px;
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-start;
+        position: center;
+        color: #959aab;
+        font-weight: 700;  
+        max-width: 900px;
+      }
+}
+
+
+/* Media Queries */
+@media (min-width: 1024px) {
+
+    .nav {
+        padding: 10px;
+    }
+
+    .link {
+        font-size: 18px;
+    }
+
+    .home__img {
+        width: 80%;
+    }
+
+    .eslogan .slogan {
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+
+
+    .wine-city h2 {
+        font-size: 2rem;
+    }
+
+    .wine-city__item {
+        max-width: 45%;
+    }
+}
+
+
+
+/*-------------------------------------------------------------------------SEGUNDO BODY---------------------------------------------------------------------------*/
+/* Header */
+.header {
+    background-color:#4b3132;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav-link{
+    color: #aeb18e;
+}
+.nav-link:hover{
+    transition: all 1.5s;
+    color: #99496f;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #2e2926;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.link:hover {
+    color: #847974;
+    transition: all 0.5s;
+}
+
+.redes .red {
+    margin: 10px;
+}
+
+svg {
+    margin: 10px;
+    color: #aeb18e;
+    width: 45px;
+    height: auto;
+}
+
+svg:hover {
+    color: #2e2926;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+/* Home */
+.home {
+    background-image: url(./multimedia/degustacion\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 110vh;
+}
+
+.home__img {
+    width: 70%;
+    height: 60%;
+}
+
+
+
+
+/* Paquetes */
+.paquetes__title {
+    color: rgb(190, 190, 190);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.card {
+    width: 90%;
+    min-height: 410px;
+    background-color: #614d3a;
+    margin:10px;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 30px 3px 40px black;
+}
+
+.img__card {
+    width: 100%;
+    height: auto;
+}
+
+.descrip__viaje {
+    color: aliceblue;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.button__card {
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    background-color: #a68e79;
+    font-size: 20px;
+}
+
+.button__card a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.button__card:hover {
+    background-color: #8f7864;
+    color: blanchedalmond;
+    transition: all 0.5s;
+}
+
+/* Vino */
+.wine {
+    margin: auto;
+}
+
+.wine h2 {
+    display: flex;
+    color: gainsboro;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 40px;
+    justify-content: center;
+}
+
+.wine2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.wine2 p {
+    height: 100%;
+    color: rgba(0, 0, 0, 0.884);
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 30px 30px 30px black;
+    padding: 20px;
+    text-align: center;
+    background: #EABE3F;
+}
+
+.wine__img {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 30px 30px 30px grey;
+}
+
+
+/* Paquetes */
+.tour_andino {
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.tour_andino h2 {
+    color: #c4c4c4;
+    margin: 40px;
+    font-size: 30px;
+
+}
+
+.andino__id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.andino__img {
+    width: 90%;
+    box-shadow: 30px 30px 30px rgb(95, 95, 95);
+}
+
+.tour_andino h3 {
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.itinerario {
+    display: flex;
+    color: #c4c4c4;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Valle */
+.valle {
+    min-height: 100vh;
+
+    .valle__tour {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .valle__di {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .valle__img {
+                width: 90%;
+                box-shadow: 30px 30px 30px black;
+            }
+
+            .descripcion {
+                color: whitesmoke;
+                font-size: 25px;
+                font-weight: 700;
+                width: 90%;
+                text-align: center;
+            }
+
+            .valle__title {
+                color: whitesmoke;
+                font-size: 30px;
+                font-weight: 700;
+                margin: 20px;
+            }
+        }
+
+        .itinerario {
+            color: #c4c4c4;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 20px;
+        }
+    }
+}
+
+/* Sección "¿Por qué elegir Wine City?" */
+.wine-city {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #574e49;
+    color: aliceblue;
+}
+
+.wine-city h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.wine-city__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wine-city__item {
+    width: 90%;
+    margin: 10px 0;
+    text-align: left;
+    background-color: #2e2926;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.wine-city__item:hover {
+    transform: translateY(-5px);
+}
+
+.wine-city__img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.wine-city__text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .contacto{
+        flex-direction: column;
+    }
+    .img__tour{
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .btn-wsp{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        bottom: 10px;
+        right: 20px;
+        background: #366325;
+        color:white;
+        border-radius: 50px;
+        text-align:center;
+    }
+    .btn-wsp:hover{
+       color: #2e2926; 
+    }
+    .header{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    svg{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        flex-direction:row ;
+    }
+    .wine-city h2 {
+        font-size: 1.8rem;
+    }
+
+    .wine-city__text {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .header{
+        padding: 20px;
+    }
+    .home__img {
+        max-width: 90%; /* Ajusta a un tamaño máximo específico */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 20px ; /* Centra la imagen */
+    }
+    .wine2 p,
+    .descrip__viaje {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .paquetes__title {
+        font-size: 1.5rem;
+    }
+
+    .tour_andino h2,
+    .tour_andino h3 {
+        font-size: 1.2rem;
+    }
+
+    .itinerario {
+        font-size: 1.2rem;
+    }
+
+    .valle__title,
+    .descripcion {
+        font-size: 1.2rem;
+    }
+}
+.sobre__nosotros {
+    min-height: 100vh;
+
+    h1{
+        color: #c4c4c4;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .nosotros {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .img__nosotros {
+            max-width: 800px;
+        }
+    }
+
+    .descripcion__nosotros {
+        margin: auto;
+        padding: 20px;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        color: #959aab;
+        font-weight: 700;
+        max-width: 90%;
+    }
+}
+
+
+/* Media Queries */
+
+/* Para dispositivos móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+        padding: 40px;
+    }
+    .eslogan .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-size: 25px;
+        color: rgba(245, 245, 245, 0.849);
+    }
+    
+    .cards{
+        width: 100%;
+    }
+    .card{
+        max-width: 90%;
+        max-height:90%;
+        padding: 0%;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+            min-height: 210px;
+            margin:0 ;
+            padding: 0%;
+            object-fit: cover;
+        }
+        p{
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button__card{
+            font-size: 15px;
+            padding: 5px;
+        }
+    }
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+
+        .img__nosotros {
+            max-width: 100%; /* Se adapta al contenedor */
+        }
+    }
+
+    .descripcion__nosotros {
+        padding: 10px;
+        font-size: 10px;
+        max-width: 100%;
+        text-align: center; /* Texto centrado para móviles */
+    }
+}
+
+/* Para tablets y iPads */
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 32px;
+        padding: 60px;
+    }
+    .home__img {
+        max-width: 40%; /* Ajusta a un tamaño máximo específico */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 20px ; /* Centra la imagen */
+    }
+    .eslogan .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-size: 20px;
+        color: rgba(245, 245, 245, 0.849);
+    }
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+
+        .img__nosotros {
+            max-width: 300px; /* Tamaño ajustado para tablets */
+        }
+    }
+    .cards{
+        width: 100%;
+    }
+    .card{
+        max-width: 90%;
+        max-height:90%;
+        padding: 0%;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+            min-height: 210px;
+            margin:0 ;
+            padding: 0%;
+            object-fit: cover;
+        }
+        p{
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button__card{
+            font-size: 15px;
+            padding: 5px;
+        }
+    }
+
+    .descripcion__nosotros {
+        margin: 20px;
+        padding: 30px;
+        font-size: 20px;
+        max-width: 90%;
+        text-align: center; /* Texto centrado para tablets */
+    }
+}
+
+/* Para notebooks y netbooks */
+@media (min-width: 901px) and (max-width: 1200px) {
+    h1 {
+        font-size: 36px;
+        padding: 70px;
+    }
+    .eslogan .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        font-size: 25px;
+        color: rgba(245, 245, 245, 0.849);
+    }
+
+    .nosotros {
+        flex-direction: column 90%;
+        align-items: center;
+    }
+    .cards{
+        width: 100%;
+    }
+    .card{
+        max-width: 90%;
+        max-height:90%;
+        padding: 0%;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+            min-height: 210px;
+            margin:0 ;
+            padding: 0%;
+            object-fit: cover;
+        }
+        p{
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button__card{
+            font-size: 15px;
+            padding: 5px;
+        }
+    }
+    .descripcion__nosotros {
+        margin: 20px;
+        padding: 20px;
+        font-size: 20px;
+        max-width: 80%;
+        text-align: center; /* Texto centrado para notebooks */
+    }
+    .form-content{
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+
+/* Para PCs y dispositivos grandes */
+@media (min-width: 1201px) {
+    h1 {
+        font-size: 10px;
+        padding: 80px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .nosotros {
+        flex-direction: row; /* Logo al lado del texto */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img__nosotros {
+        max-width: 150px; /* Tamaño ajustado para PCs */
+        margin-right: 20px; /* Espaciado entre el logo y el texto */
+    }
+
+    .descripcion__nosotros {
+        margin: 40px;
+        padding: 20px;
+        font-size: 20px;
+        max-width:100%;
+        text-align: left; /* Alineación izquierda para el texto en PC */
+    }
+    .card{
+        max-width: 90%;
+        height:450px;
+        padding: 0;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+            min-height: 210px;
+            margin:0 ;
+            padding: 0;
+            object-fit: cover;
+        }
+        p{
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button__card{
+            font-size: 15px;
+            padding: 10px;
+        }
+    }
+}
+/* Base Styles (for larger screens like desktops) */
+.recorridos .recorrido {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.recorridos .recorrido img {
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 30px 30px 30px black;
+    border: solid #847974;
+}
+
+.recorridos .recorrido p {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 700;
+    max-width: 500px;
+}
+
+@media screen and (min-width:850px){
+    .texto{
+    flex-direction: column;
+    }
+    .descripcion_recorrido{
+        font-size: 10px; 
+    }
+    .recorrido__img{
+        width: 400px;
+    }
+}
+
+/* Media Query for mobile devices (480px and below) */
+@media (max-width: 849px) {
+    .recorridos .recorrido {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .recorridos .recorrido img {
+        max-width: 100%;
+        box-shadow: 10px 10px 10px black;
+    }
+
+    .recorridos .recorrido p {
+        font-size: 18px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+/* Base styles for footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.719);
+    color: #e0c39e;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 equal columns */
+    grid-template-rows: auto auto; /* 2 rows */
+    gap: 20px; /* Space between items */
+    text-align: center; /* Center text inside grid items */
+    font-size: 18px; /* Base font size */
+}
+
+/* Each footer section (div) */
+.footer div {
+    margin: 10px 0;
+}
+
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+    font-size: 1em;
+    color: #e0c39e;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer icon styles */
+.footer .icon {
+    margin-right: 8px;
+}
+@media (min-width:769px){
+    .footer{
+        grid-template-columns: repeat(3,1fr) ;
+        grid-template-rows: 2 1fr ;
+
+    }
+}
+
+/* Media Query for tablets (768px and below) */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr 1fr; /* Reduce to 2 columns on tablets */
+        grid-template-rows: repeat(3, auto); /* 3 rows for better spacing */
+        padding: 30px 15px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .footer h3 {
+        font-size: 1.1em;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 0.95em;
+    }
+}
+
+/* Media Query for mobile devices (480px and below) */
+@media (max-width: 480px) {
+    footer {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        grid-template-rows: auto; /* Let the rows expand naturally */
+        padding: 20px 10px; /* Reduce padding for small devices */
+        font-size: 14px; /* Smaller base font size */
+    }
+
+    .footer h3 {
+        font-size: 1em;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1024px) {
+    body{
+        font-family: 'Quicksand';
+    }
+    .form-content h2 {
+        font-size: 30px;
+    }
+    form {
+        width: 70%;
+    }
+    label {
+        font-size: 24px;
+    }
+    input, textarea {
+        font-size: 18px;
+        padding: 15px;
+    }
+    .btn {
+        width: 130px;
+        padding: 18px;
+    }
+}
+
+/* Media queries para dispositivos pequeños (smartphones) */
+@media (max-width: 768px) {
+    .home__img{
+        width: 50%;
+        height: 50%;
+    }
+    .slogan{
+        font-size: 15px;
+    }
+    .form-content {
+        padding: 1opx;
+    }
+    .form-content h2 {
+        font-size: 30px;
+    }
+    .img__login{
+        height: 50%;
+        width: 50%;
+        padding: 10px;
+    }
+    form {
+        width: 90%;
+    }
+    label {
+        font-size: 20px;
+    }
+    input, textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* Media queries para dispositivos muy pequeños (moviles compactos) */
+@media (max-width: 480px) {
+    .form-content h2 {
+        font-size: 24px;
+    }
+    label {
+        font-size: 18px;
+    }
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .btn {
+        padding: 12px;
+    }
+}
+@media (max-width:991px){
+    .slider-box{
+        margin: auto;
+        width: 95%;
+        height: 70%;
+        padding: 0;
+    }
+    .slider-box img{
+        min-height:450px ;
+        object-fit: cover;
+    }
+}
+.titulo__region{
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+.card__tours{
+    background-color: #333646;
+    width: 90%;
+    min-height: 550px;
+    border-radius: 20px;
+    margin: auto;
+    img{
+        width: 100%;
+        min-height: 320px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    p{
+        justify-content: flex-start;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+.button__tour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #99496f;
+    padding: 15px;
+    a{
+        text-decoration: none;
+        color:whitesmoke;
+    }
+}
+.button__tour:hover{
+    background-color: #661111;
+    border: solid white;
+    transition: all .5s ;
+}
+
+.tour__titulo{
+    color:wheat;
+    font-weight: 700;
+    text-align:center;
+    font-size: 15px;
+    padding: 10px;
+}
+/* Small Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .card__tours {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .button__tour {
+        padding: 10px;
+    }
+    
+    .tour__titulo {
+        font-size: 12px;
+    }
+}
+
+/* Medium Devices (min-width: 601px and max-width: 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .card__tours {
+        width: 95%;
+    }
+    
+    .button__tour {
+        padding: 12px;
+    }
+    
+    .tour__titulo {
+        font-size: 14px;
+    }
+}
+
+/* Large Devices (min-width: 901px) */
+@media (min-width: 901px) {
+    .card__tours {
+        width: 90%;
+    }
+    
+    .button__tour {
+        padding: 15px;
+    }
+    
+    .tour__titulo {
+        font-size: 16px;
+    }
+}

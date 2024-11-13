@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="shortcut icon" href="./multimedia/logowine (1).jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Wine City</title>
+</head>
+<body>
+
+  <a href="https://api.whatsapp.com/send?phone=2616339555" class="btn-wsp" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+  </a>
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" style="color: whitesmoke"; type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cards"><table>Nuestros Tours</table></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./htmls/nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="redes">
+                <a class="red" href="https://www.instagram.com/winecityexperience/"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"color="white">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a>
+                  <a class="red" href="#contacto"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16"color="white">
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                </svg></a>
+                <a class="red" href="https://www.facebook.com/WineCityExperience?mibextid=ZbWKwL"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16 "color="white">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg></a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="home" id="home">
+            <img src="./multimedia/e7a3c6fa-f910-4600-a588-e6037a2a56cb.webp" alt="" class="home__img">
+            <div class="eslogan">
+                <p class="slogan">
+                    Desde el primer contacto hasta tu regreso a casa, estamos aquí para ti. Nuestro compromiso es hacer que
+                    tu
+                    viaje sea tranquilo  y lleno de momentos inolvidables.
+                </p>
+            </div>
+        </section>
+        <section>
+          <div class="slider_box">
+            <ul>
+              <li>
+                <img src="./multimedia/helicopteros.webp" alt="">
+              </li>
+              <li>
+                <img src="./multimedia/Potrerillos_001-b.webp" alt="">
+              </li>
+              <li>
+                <img src="./multimedia/ANGELICA.webp" alt="">
+              </li>
+              <li>
+                <img src="./multimedia/alta montaña-carrusel.webp" alt="">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="cards" id="cards">
+          <div class="paquetes__title">TOURS SUGERIDOS</div>
+            <div class="scale-down-vertical-center">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="./multimedia/potre.webp" alt="" class="img__card">
+                      <h3 class="titulo__card">ITINERARIO ANDINO</h3>
+                      <p class="descrip__viaje">
+                        Paraíso natural que invita a desconectar y conectarse con la naturaleza.
+                      </p>
+                      <button class="button__card"> <a href="./htmls/andino.html">ver mas</a></button>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="./multimedia/piedra infinita.webp" alt="" class="img__card">
+                      <h3 class="titulo__card"> REGION VALLE DE UCO</h3>
+                      <p class="descrip__viaje">  
+                        Recorrido por la bodega que es un homenaje a la montaña, diseñada para
+                        integrarse completamente con el paisaje.
+                      </p>
+                      <button class="button__card"><a href="./htmls/tours.html">ver mas</a> </button>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="./multimedia/apertura-trapiche.webp" alt="" class="img__card">
+                      <h3 class="titulo__card">REGION MAIPU</h3>
+                      <p class="descrip__viaje"> 
+                         Una visita al pasado, pero en el presente. Un encuentro con paisajes y vinos deslumbrantes. Somos
+                        guardianes de un legado
+                      </p>
+                      <button class="button__card"><a href="./htmls/tours.html">ver mas</a> </button>
+                    </div>
+                  </div>
+                </div>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img src="./multimedia/imagen1.webp" alt="" class="img__card">
+                          <h3 class="titulo__card">REGION DE LUJAN</h3>
+                          <p class="descrip__viaje"> 
+                            Nuestra visión consiste en elaborar vinos intensos e inolvidables, verdaderamente expresivos del terroir.
+                          </p>
+                          <button class="button__card"><a href="./htmls/tours.html">ver mas</a> </button>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img src="./multimedia/chandon.webp" alt="" class="img__card">
+                          <h3 class="titulo__card">TOURS DE CHAMPAGNE</h3>
+                          <p class="descrip__viaje"> 
+                            Sumérgete en el mundo del champagne: sabores, aromas y paisajes que te dejarán sin aliento."
+                          </p>
+                          <button class="button__card"><a href="./htmls/champane.html">ver mas</a> </button>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                          <img src="./multimedia/corchos.webp" alt="" class="img__card">
+                          <h3 class="titulo__card">TOUR 95UP</h3>
+                          <p class="descrip__viaje"> 
+                            Programa pensado para las personas más exigentes a la hora de degustar un vino.
+                          </p>
+                          <button class="button__card"><a href="./htmls/95up.html">ver mas</a> </button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section>
+          <div class="slider_box">
+            <ul>
+              <li>
+                <img src="./multimedia/trafiic-carrusel.webp" alt="">
+              </li>
+              <li>
+                <img src="./multimedia/piedra-carrusel.webp" alt="">
+              </li>
+              <li>
+                <img src="./multimedia/vehiculos-carrusel.webp" alt="">
+              </li>
+              <li>
+                <img src="./multimedia/vigil-carrusel.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="wine">
+            <div class="wine2">
+              <h2>¿POR QUÉ ELEGIR  WINE CITY?  </h2>
+                <p>Te ofrecemos toda la seguridad y credibilidad que sólo una agencia de viajes regulada por el Ministerio de
+                  Turismo
+                  puede brindarte, con años de experiencia, alta calificación y premiada por TripAdvisor. <br>
+                  <br>
+                  - EXPERIENCIA IRREPETIBLE <br>
+                  <br>
+                  En Wine City diseñamos cada roteiro a la medida, considerando tus sueños, tu presupuesto y cada
+                  detalle que marca la diferencia.
+                  Al entrar en contacto con nosotros será atendido por personas que realmente conocen del asunto, siendo informado sobre
+                  los mejores destinos <br>
+                  <br>
+                
+                  - SERVICIOS DE TRANSPORTE EXCLUSIVO – SEGURIDAD Y CONFIANZA. <br>
+                  <br>
+                  Vehiculos calificados y especializados para brindar un acompañamiento integral <br>
+                  <br>
+                  - ATENDIMIENTO AGIL Y PERSONALIZADO <br>
+                  <br>
+                  Nos enfocamos en brindar un servicio diferenciado a nuestros clientes. Por eso, aquí encontraras asesores calificados para ofrecerte un servicio ágil y personalizado <br>
+                  <br>
+                  - ASISTENCIA INTEGRAL <br>
+                  <br>
+                  Para tu tranquilidad y comodidad, recibirás asistencia durante tu estadía. Nos ponemos a disposición con una guardia móvil para que puedas contactar un asesor especializado ante cualquier duda <br>
+                  <br>
+
+                  - PRECIOS COMPETITIVOS <br>
+                  <br>
+                  En Wine City valoramos cada centavo invertido en tus recuerdos por eso ofrecemos la mejor relación calidad – precio del mercado sin comprometer nunca la cualidad de nuestros paseos. Además de eso también encontraras ofertas y promociones imperdibles <br>
+                  <br>
+                </p>
+            </div>
+        </section>
+      <section class="section__comentarios">
+        <h2 class="titulo__comentarios">Algunos comentarios sobre nosotros </h2>
+        <div class="contenedor">
+          <div class="slider-contenedor">
+            <div class="slider-test">
+              <p>Todo fue increíble, quedamos muy contentos con la simpatia y atención de todos los motoristas, con el atendimiento de Belén desde el início y con la calidad de la empresa. Seguro que voy a recomendarlos a mis conocidos </p>
+              <img src="./multimedia/user1.png" alt="">
+              <h3>Thainá O</h3>
+              <button class="button__comentarios"><a href="./htmls/comentarios.html">Tu opinion nos importa !!</a></button>
+            </div>
+            <div class="slider-test">
+              <p>Excelente recomendado 100% traslado óptimo (van. Con aire acondicionado) las guías son de lo mejor! Te explican todo, muy organizados, en resumen un tour que vale cada centavo que te cobran, lo recomiendo!</p>
+              <img src="./multimedia/user2.png" alt="">
+              <h3>Martina r</h3>
+              <button class="button__comentarios"><a href="./htmls/comentarios.html">Tu opinion nos importa !!</a></button>
+            </div>
+            <div class="slider-test">
+              <p>Muy buena experiência con wine experiência en especial con el condutor Augustin!!! En Mendoza eres una muy buena experiência.</p>
+              <img src="./multimedia/user3.png" alt="">
+              <h3>Diogo S</h3>
+              <button class="button__comentarios"><a href="./htmls/comentarios.html">Tu opinion nos importa !!</a></button>
+            </div>
+            <div class="slider-test">
+              <p>Fuimos un grupo de mujeres, no conocíamos Mendoza. Wine city se encargó de todo. Las mejores Bodegas, el paseo a Alta Montaña es maravilloso. Carina fue nuestra conductora nos sentimos súper acompañadas y seguras. Gracias a la Agencia tuvimos un viaje hermoso y cero dolor de cabeza. súper recomendable</p>
+              <img src="./multimedia/user4.png" alt="">
+              <h3> Luna c</h3>
+              <button class="button__comentarios"><a href="./htmls/comentarios.html">Tu opinion nos importa !!</a></button>
+            </div>
+            <div class="slider-test">
+              <p>increíble equipo Súper recomendado. . . .
+                Me han apoyado en cada duda y petición.
+                El chófer muy profesional y amable . . Siempre encantado de ayudar. . todo fue excelente.</p>
+              <img src="./multimedia/user5.png" alt="">
+              <h3>Carina I</h3>
+              <button class="button__comentarios"><a href="./htmls/comentarios.html">Tu opinion nos importa !!</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="contacto" id="contacto">
+          <div class="login">
+            <div class="form-content">
+              <h2>Contactenos ahora</h2>
+              <form action="https://formsubmit.co/winecityweb@gmail.com" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Correo Electronico</label>
+        
+                <input type="email" name="email" id="email">
+                <label for="subject">Asunto</label>
+        
+                <input type="text" name="subject" id="subject">
+                <label for="comments">Comentarios</label>
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                <input class="btn" type="submit" value="enviar">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+              </form>
+            </div>
+          </div>
+          <img src="./multimedia/logros.webp" alt="" class="img__login">
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="./js/animacion.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<footer class="footer">
+  <div>
+    <h3>Contacto</h3>
+    <p><span class="icon">📞</span>+54 9 261 633 9555</p>
+    <p><span class="icon">✉</span><a href="mailto:info@winecityexperiencetravel.tur.ar">info@winecityexperiencetravel.tur.ar</a></p>
+    <p><span class="icon">📍</span>Galería Piazza, Av. San Martín 1027, Local 46, M5500ECC Mendoza, Argentina</p>
+  </div>
+  <div>
+    <h3>Redes</h3>
+    <p><span class="icon">📸</span><a href="https://www.instagram.com/winecityexperience/">Instagram</a></p>
+    <p><span class="icon">📘</span><a href="https://www.facebook.com/WineCityExperience?mibextid=ZbWKwL">Facebook</a></p>
+  </div>
+  <div>
+    <h3>Legal</h3>
+    <p><span class="icon">🏢</span>Wine City SA</p>
+    <p><span class="icon">🗂</span>C.U.I.T. N° 30-71545341-6</p>
+    <p><span class="icon">📄</span>N° Legajo 16889</p>
+  </div>
+</footer>
+</html>
